@@ -23,7 +23,10 @@ JavaScript 中，某个函数的参数数量是不固定的，因此要说适用
 	var obj = new Object();
 	obj.color = "blue";
 
-	sayColor.call(obj, "The color is ", "a very nice color indeed.");
+	sayColor.call(obj, "The color is ", " a very nice color indeed.");
+	sayColor.apply(obj, ["The color is ", " a very nice color indeed."]);
 
-	sayColor.apply(obj, ["The color is ", "a very nice color indeed."]);
+我们可以简单来分析一下这段代码。首先[函数](http://www.cnblogs.com/moltboy/archive/2013/04/24/3040450.html)sayColor在定义的时候，它自身的上下文是全局上下文，this指的是window对象。
+
+但是，当我们使用call和apply方法去执行sayColor时，sayColor的上下文发生改变，它的上下文变成了obj对象的上下文。此时，alert结果应该是“THe color is *blue* a very nice color indeed.”
 
