@@ -1,1 +1,3 @@
+#JavaScript 中 call和apply的使用
+
 最近在整理JavaScript中一些关键和有难度的知识点，这篇文章主要针对call和apply的使用进行整理，希望对大家有一些启发。
