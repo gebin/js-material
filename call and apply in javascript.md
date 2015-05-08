@@ -15,6 +15,7 @@ JavaScript 中，某个函数的参数数量是不固定的，因此要说适用
 ## 实例
 
 [例子一](http://www.w3school.com.cn/js/pro_js_inheritance_implementing.asp)
+
 	function sayColor(sPrefix,sSuffix) {
 	    alert(sPrefix + this.color + sSuffix);
 	};
